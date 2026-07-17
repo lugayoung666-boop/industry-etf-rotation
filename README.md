@@ -152,7 +152,7 @@ signal_mode: turning
 
 表示根据变盘指数状态在动量与反转信号之间切换。`momentum` 和 `reversal` 仅作为对照模式。
 
-- [ ] 已将 `regime_switch` 设为默认主策略；
+- [√] 已将 `turning` 设为默认主策略；
 - [ ] 已保留 `momentum` 和 `reversal` 作为对照模式；
 - [ ] 已验证三个模式调用的信号窗口和排序方向正确。
 
