@@ -147,10 +147,10 @@ AkShare和Tushare均可用于获取真实行情数据；两者只是数据来源
 目标配置：
 
 ```yaml
-signal_mode: regime_switch
+signal_mode: turning
 ```
 
-纯动量和纯反转只能作为对照策略，不能替代变盘指数切换主模型。
+表示根据变盘指数状态在动量与反转信号之间切换。`momentum` 和 `reversal` 仅作为对照模式。
 
 - [ ] 已将 `regime_switch` 设为默认主策略；
 - [ ] 已保留 `momentum` 和 `reversal` 作为对照模式；
