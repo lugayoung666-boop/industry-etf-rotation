@@ -1,7 +1,7 @@
 start_date: "2015-01-01"
 end_date: "2026-07-15"
 rank_return_window: 21
-rank_change_lag: 220
+rank_change_lag: 21
 rank_vol_window: 220
 rank_smooth_window: 20
 momentum_window: 240
