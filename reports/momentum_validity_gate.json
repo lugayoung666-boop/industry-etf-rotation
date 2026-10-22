@@ -1,0 +1,11 @@
+{
+  "status": "NOT_VALIDATED",
+  "runtime_source_count": 4,
+  "runtime_passed_source_count": 0,
+  "promotion_allowed": false,
+  "interpretation": "当前纯动量尚未通过统一有效性闸门；A/B/C 只能作为探索性策略实验，不得把回测收益解释为已验证的因子收益。",
+  "alpha": 0.05,
+  "primary_specification": "252_trading_day_momentum",
+  "robustness_specification": "240_trading_day_momentum",
+  "input_file": "reports/momentum_validity_summary.csv"
+}

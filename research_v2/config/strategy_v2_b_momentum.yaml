@@ -1,0 +1,17 @@
+start_date: "2015-01-01"
+end_date: "2026-07-15"
+rank_return_window: 21
+rank_change_lag: 21
+rank_vol_window: 220
+rank_smooth_window: 20
+momentum_window: 252
+signal_mode: momentum
+top_fraction: 0.25
+min_holdings: 1
+fee: 0.0005
+slippage: 0.0005
+initial_cash: 1000000
+experiment: "B"
+evidence_status: "NOT_VALIDATED_20260806"
+factor_promotion_allowed: false
+description: "V2 experiment B: fixed 16-ETF pool, pure momentum, ceil(25% of eligible pool)"

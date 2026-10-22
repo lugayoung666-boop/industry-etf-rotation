@@ -1,0 +1,31 @@
+name: Public research checks
+
+on:
+  pull_request:
+  push:
+    branches:
+      - portfolio/public-internship-2026
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install public dependencies
+        run: python -m pip install -r requirements-public.txt
+      - name: Run public unit tests
+        run: >-
+          python -m pytest -q
+          tests/test_v2_signals.py
+          tests/test_v2_admission.py
+          tests/test_momentum_validity_gate.py
+      - name: Recompute research gate
+        run: python run_public_gate.py
+
