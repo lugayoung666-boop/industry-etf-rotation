@@ -6,19 +6,36 @@ __pycache__/
 .mypy_cache/
 .ruff_cache/
 
-# Virtual environments and local secrets
+# Virtual environments and secrets
 .venv/
 venv/
 env/
 .env
+.env.*
+*.pem
+*.key
 
-# Generated market-data caches and backtest artifacts
-data/cache/*.csv
+# Licensed or generated market data
+data/cache/
+data/raw/
+data/processed/
+*.parquet
+*.feather
+*.xlsx
 output*/
-*.log
+private_results/
+
+# Public-release exclusions
+*handoff*
+*Handoff*
+*内部*
+*Wind*
+*wind*
+dashboard_private/
 
 # OS/editor noise
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
+
